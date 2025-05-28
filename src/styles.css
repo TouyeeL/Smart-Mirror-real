@@ -4,13 +4,13 @@
   /* Set your own grid   */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px;
-  grid-column-gap: 1em;
+  grid-template-rows: 300px;
+  grid-column-gap: .5em;
 }
 
 /* Widgets */
 section {
-  background: rgba(135, 200, 226, 0.5);
+  
   padding: 1em;
   
   /* Relative Parent. Absolute Child */
@@ -25,10 +25,11 @@ section {
   color: #478ab1;
   /* Position time widget */
   grid-column: 1 / 1;
-  grid-row: 1 / 2;
+  grid-row: 1 / 1;
+
   
   /* Add some padding */
-  padding: 1em;
+  padding: .5em;
   
   /* Add a border */
   border-radius: 10px;
@@ -53,18 +54,20 @@ section {
 /* Date */
 .date {
   font-family: 'Pixelify Sans', sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   color: #478ab1;
   /* Position time widget */
-  grid-column: 2 / -1;
+  grid-column: 3 / 3;
   grid-row: 3 / 3;
   
   /* Add some padding */
   padding: 1em;
+ 
   
   /* Add a border */
   border-radius: 10px;
+
   
   /* Add a shadow */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -85,15 +88,16 @@ section {
 /* Weather */
 .weather {
   font-family: 'Pixelify Sans', sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   color: #333;
   /* Position time widget */
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
+  grid-column: 3 / 3;
+  grid-row: 2 / 1;
   
   /* Add some padding */
   padding: 1em;
+
   
   /* Add a border */
   border-radius: 10px;
