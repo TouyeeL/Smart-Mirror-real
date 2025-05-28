@@ -24,7 +24,7 @@ section {
   text-align: center;
   color: #478ab1;
   /* Position time widget */
-  grid-column: 1 / -1;
+  grid-column: 1 / 1;
   grid-row: 1 / 2;
   
   /* Add some padding */
@@ -57,7 +57,7 @@ section {
   text-align: center;
   color: #478ab1;
   /* Position time widget */
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
   grid-row: 3 / 3;
   
   /* Add some padding */

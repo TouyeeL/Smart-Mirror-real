@@ -8,6 +8,7 @@
       <h1>Weather</h1>
       <data value="" class="city">A City</data>
       <data value="" class="temp">A Temp</data>
+      <data value="" class="press">A press</data>
       <img src="https://assets.codepen.io/16425/image-placeholder.png?width=200&height=200&format=auto" class="icon" />
     
 </section>
@@ -23,11 +24,12 @@ const units = 'imperial';
 // Get Elements
 const theCity = document.querySelector('.city');
 const theTemp = document.querySelector('.temp');
+const thePress = document.querySelector('.press');
 const theIcon = document.querySelector('.icon');
 
 // Function to get weather by coordinates
 function getWeatherByCoords(lat, lon) {
-  const url = `https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={APIKEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}&units=${units}`;
   console.log(url);
 
   fetch(url)
@@ -39,6 +41,7 @@ function getWeatherByCoords(lat, lon) {
       // Set Elements
       theCity.innerText = data.name;
       theTemp.innerText = data.main.temp;
+      thePress.innerText = data.main.pressure;
       theIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     });
 }
