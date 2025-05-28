@@ -58,8 +58,8 @@ section {
   text-align: center;
   color: #478ab1;
   /* Position time widget */
-  grid-column: 3 / 3;
-  grid-row: 3 / 3;
+  grid-column: 1 / 1;
+  grid-row: 2/ 3;
   
   /* Add some padding */
   padding: 1em;
@@ -111,11 +111,14 @@ section {
 }
 
 .temp {
-  
+  color: blue;
 }
 
 .weather img {
   
+}
+.pressure {
+  color: #51a92b;
 }
 
 /* Smart Mirror */
